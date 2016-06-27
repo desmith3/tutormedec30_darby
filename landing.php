@@ -1,5 +1,6 @@
 
 
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -47,24 +48,12 @@
                     <div class="intro-text">
                         
                         <hr class="star-light">
-                        
+                        <span class="skills"></span>
+                        <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <a href="index.php" class="btn btn-lg btn-outline"> Login         </a>
                             <span></span>
-                   
-                        
-                        <!--form 2-->
-				<form id="loginForm" action="dbLoginTest.php" method="post" >
-					<div class="form-group col-xs-12 floating-label-form-group controls">	
-                    <label for="username">Username</label>
-                         <input id="username"name="username" type="name">
-                        <label for="password">Password</label>
-						<input id="password" name="password" type="password">
-
-					</div> 
-                    <input type="submit" value="Login" class="btn btn-lg btn-outline" >
-					</form>
-                        
-                        
-                
+                    <a href="register.php" class="btn btn-lg btn-outline"> Sign Up</a>
+                </div>
                     </div>
 
                 </div>
@@ -165,19 +154,3 @@
 <?php
 
 ?>
-
-
-
-
-
-<?php
-include "dbConnect.php";
-$result1 = mysqli_query ( $con, "select CourseID from Course" );
-?>
-
-
-      <!-- Navigation -->
-   
-                   
-                  
- 

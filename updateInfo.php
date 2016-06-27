@@ -1,3 +1,4 @@
+<div class="centerTable">
 <?php
 session_start ();
 if (! isset ( $_SESSION ['username'] )) {
@@ -19,3 +20,5 @@ $update_user = mysqli_query ( $con, "UPDATE User SET FirstName = '$firstName', L
 return populateViewInfoForm ( $userId );
 }
 ?>
+
+  </div>

@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Tutor Me!!</title>
+<title>GradeBoost</title>
 <link rel="stylesheet" href="js/slick/slick.grid.css" type="text/css" />
 <link rel="stylesheet" href="js/slick/controls/slick.pager.css"
 	type="text/css" />

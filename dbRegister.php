@@ -52,30 +52,31 @@ if (isset ( $_POST ) && ! empty ( $_POST )) {
 				mysqli_query ( $con, $query5 );
 			}
 			
-			require 'mailInitRegistration.php';
+			//require 'mailInitRegistration.php';
 			
-			$to = $email;
-			$name = $username; // Recipient's name
-			$actLink = 'http://www.cs.indiana.edu/cgi-pub/sauchakr/tutor/registrationConfirmation.php?userid=' . $username;
+			//$to = $email;
+			//$name = $username; // Recipient's name
+			//$actLink = 'http://www.cs.indiana.edu/cgi-pub/sauchakr/tutor/registrationConfirmation.php?userid=' . $username;
 			
-            $from = "desmith3@crimson.ua.edu"; // Reply to this email
-            $mail->From = $from;
-            $mail->FromName = "GradeBoost!"; // Name to indicate where the email came from when the recepient received
+            //$from = "desmith3@crimson.ua.edu"; // Reply to this email
+           // $mail->From = $from;
+            //$mail->FromName = "GradeBoost!"; // Name to indicate where the email came from when the recepient received
 
-			$mail->AddAddress ( $to, $name );
-			$mail->Subject = "Registration Confirmation";
+
+			//$mail->AddAddress ( $to, $name );
+			//$mail->Subject = "Registration Confirmation";
 			
-			$body = "";
-			$body .= "Hello " . $username . ":<br />";
-			$body .= "Please click on the link below to confirm your registration with Tutor Me!!<br />";
-			$body .= '<a href="' . $actLink . '">' . $actLink . "</a><br />";
-			$body .= "<br />Thank you <br /> Tutor me!<br />";
+			//$body = "";
+			//$body .= "Hello " . $username . ":<br />";
+			//$body .= "Please click on the link below to confirm your registration with Tutor Me!!<br />";
+			//$body .= '<a href="' . $actLink . '">' . $actLink . "</a><br />";
+			//$body .= "<br />Thank you <br /> Tutor me!<br />";
 			
-			$mail->Body = $body; // HTML Body
-			$mail->AltBody = $body; // Text Body
-			if (! $mail->Send ()) {
-				echo "Mailer Error: " . $mail->ErrorInfo;
-			} else {
+			//$mail->Body = $body; // HTML Body
+			//$mail->AltBody = $body; // Text Body
+			//if (! $mail->Send ()) {
+			//	echo "Mailer Error: " . $mail->ErrorInfo;
+			//} else {
 				?>
 <script type="text/javascript">
   				alert("An email has been sent to you at the address provided. Please follow the link in the email to complete registration.");
