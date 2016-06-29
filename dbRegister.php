@@ -52,15 +52,15 @@ if (isset ( $_POST ) && ! empty ( $_POST )) {
 				mysqli_query ( $con, $query5 );
 			}
 			
-			//require 'mailInitRegistration.php';
+			require 'mailInitRegistration.php';
 			
-			//$to = $email;
-			//$name = $username; // Recipient's name
-			//$actLink = 'http://www.cs.indiana.edu/cgi-pub/sauchakr/tutor/registrationConfirmation.php?userid=' . $username;
+			$to = $email;
+			$name = $username; // Recipient's name
+			$actLink = 'http://www.cs.indiana.edu/cgi-pub/sauchakr/tutor/registrationConfirmation.php?userid=' . $username;
 			
-            //$from = "desmith3@crimson.ua.edu"; // Reply to this email
-           // $mail->From = $from;
-            //$mail->FromName = "GradeBoost!"; // Name to indicate where the email came from when the recepient received
+            $from = "desmith3@crimson.ua.edu"; // Reply to this email
+            $mail->From = $from;
+            $mail->FromName = "GradeBoost!"; // Name to indicate where the email came from when the recepient received
 
 
 <<<<<<< HEAD
