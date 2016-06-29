@@ -52,17 +52,18 @@ if (isset ( $_POST ) && ! empty ( $_POST )) {
 				mysqli_query ( $con, $query5 );
 			}
 			
-			require 'mailInitRegistration.php';
+			//require 'mailInitRegistration.php';
 			
-			$to = $email;
-			$name = $username; // Recipient's name
-			$actLink = 'http://www.cs.indiana.edu/cgi-pub/sauchakr/tutor/registrationConfirmation.php?userid=' . $username;
+			//$to = $email;
+			//$name = $username; // Recipient's name
+			//$actLink = 'http://www.cs.indiana.edu/cgi-pub/sauchakr/tutor/registrationConfirmation.php?userid=' . $username;
 			
-            $from = "desmith3@crimson.ua.edu"; // Reply to this email
-            $mail->From = $from;
-            $mail->FromName = "GradeBoost!"; // Name to indicate where the email came from when the recepient received
+            //$from = "desmith3@crimson.ua.edu"; // Reply to this email
+           // $mail->From = $from;
+            //$mail->FromName = "GradeBoost!"; // Name to indicate where the email came from when the recepient received
 
 
+<<<<<<< HEAD
 			$mail->AddAddress ( $to, $name );
 			$mail->Subject = "Registration Confirmation";
 			
@@ -71,12 +72,22 @@ if (isset ( $_POST ) && ! empty ( $_POST )) {
 			$body .= "Please click on the link below to confirm your registration with GradeBoost!<br />";
 			$body .= '<a href="' . $actLink . '">' . $actLink . "</a><br />";
 			$body .= "<br />Thank you <br /> GradeBoost<br />";
+=======
+			//$mail->AddAddress ( $to, $name );
+			//$mail->Subject = "Registration Confirmation";
 			
-			$mail->Body = $body; // HTML Body
-			$mail->AltBody = $body; // Text Body
-			if (! $mail->Send ()) {
-				echo "Mailer Error: " . $mail->ErrorInfo;
-			} else {
+			//$body = "";
+			//$body .= "Hello " . $username . ":<br />";
+			//$body .= "Please click on the link below to confirm your registration with Tutor Me!!<br />";
+			//$body .= '<a href="' . $actLink . '">' . $actLink . "</a><br />";
+			//$body .= "<br />Thank you <br /> Tutor me!<br />";
+>>>>>>> e5f7ee562108cb709ff1181fd52fcae7dcedae51
+			
+			//$mail->Body = $body; // HTML Body
+			//$mail->AltBody = $body; // Text Body
+			//if (! $mail->Send ()) {
+			//	echo "Mailer Error: " . $mail->ErrorInfo;
+			//} else {
 				?>
 
 <script type="text/javascript">
