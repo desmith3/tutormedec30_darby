@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Tutor Me!!</title>
+<title>GradeBoost</title>
 <link rel="stylesheet" href="js/slick/slick.grid.css" type="text/css" />
 <link rel="stylesheet" href="js/slick/controls/slick.pager.css"
 	type="text/css" />
@@ -15,7 +15,7 @@
 	type="text/css" />
 <link rel="stylesheet" href="js/slick/controls/slick.columnpicker.css"
 	type="text/css" />
-<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="all" />
 <!--<link href='http://fonts.googleapis.com/css?family=Raleway:400,900,800,700,600,500,300,200,100' rel='stylesheet' type='text/css'>-->
 
 <script src="js/jquery-1.8.0.min.js" type="text/javascript"></script>
@@ -68,28 +68,87 @@
 				$_SESSION ['courseid_rate'] = $courseID;
 				$_SESSION ['date_rate'] = $date;
 				
-				?>
+    ?>
+
+    
+      <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#page-top"><img id="logo" src="css/images/title.png" /></a>
+                <br/>
+                <br/>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                   
+                    <li class="page-scroll">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#contact">Contact</a>
+                    </li>
+                    <li><a href="tutorCreateProfile.html">Edit Profile</a></li>
+					<li><a href="#">Search Tutors</a></li>
+					<li><a href="#logoff.html">Log off</a></li>
+                    <li class="active"><a href="#">Home</a></li>
+					<li><a href="#">About us</a></li>
+					<li><a href="#">Contacts</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img class="img-responsive" src="img/profile.png" alt="">
+                    <div class="intro-text">
+                        <span class="name">Start Bootstrap</span>
+                        <hr class="star-light">
+                        <span class="skills">Check us out! </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 		<div class="shell">
 		<div class="container">
-			<header id="header">
-				<img id="logo" src="css/images/logo.png" onClick="openLanding()" />
-				<div class="cl">&nbsp;</div>
-			</header>
-			<nav id="navigation">
+			<!--<header id="header">
+				<!--<img id="logo" src="css/images/logo.png"--> <!--onClick="openLanding()" />-->
+				<!--<div class="cl">&nbsp;</div>
+			</header>-->
+			<!--<nav id="navigation">
 				<ul>
 					<li class="active"><a href="#">Home</a></li>
 					<li><a href="#">About us</a></li>
 					<li><a href="#">Contacts</a></li>
 				</ul>
 				<div class="cl">&nbsp;</div>
-			</nav>
-			<div id="leftNavigation">
+			</nav>-->
+			<!--<div id="leftNavigation">
 				<ul class="nav">
 					<li><a href="tutorCreateProfile.html">Edit Profile</a></li>
 					<li><a href="#">Search Tutors</a></li>
 					<li><a href="#logoff.html">Log off</a></li>
 				</ul>
-			</div>
+			</div>-->
 			<div id="userProfileDiv" style="position: relative"
 				style="width:100%;">
 				<div class="search">

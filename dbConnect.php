@@ -8,10 +8,18 @@ $dbPass = "d0b30ef6";
 $database = "smith";
 */
 
+$dbHost = "us-cdbr-azure-central-a.cloudapp.net"; 
+$dbUserAndName = "be0799ffd58101"; 
+$dbPass = "bf1d0130";
+$database = "ellen";
+
+
+/*
 $dbHost = "localhost"; 
 $dbUserAndName = "root"; 
 $dbPass = "root";
 $database = "smith";
+*/
 
 // Create connection to database
 global $con;

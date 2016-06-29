@@ -62,14 +62,15 @@ if (isset ( $_POST ) && ! empty ( $_POST )) {
             $mail->From = $from;
             $mail->FromName = "GradeBoost!"; // Name to indicate where the email came from when the recepient received
 
+
 			$mail->AddAddress ( $to, $name );
 			$mail->Subject = "Registration Confirmation";
 			
 			$body = "";
 			$body .= "Hello " . $username . ":<br />";
-			$body .= "Please click on the link below to confirm your registration with Tutor Me!!<br />";
+			$body .= "Please click on the link below to confirm your registration with GradeBoost!<br />";
 			$body .= '<a href="' . $actLink . '">' . $actLink . "</a><br />";
-			$body .= "<br />Thank you <br /> Tutor me!<br />";
+			$body .= "<br />Thank you <br /> GradeBoost<br />";
 			
 			$mail->Body = $body; // HTML Body
 			$mail->AltBody = $body; // Text Body
@@ -77,6 +78,7 @@ if (isset ( $_POST ) && ! empty ( $_POST )) {
 				echo "Mailer Error: " . $mail->ErrorInfo;
 			} else {
 				?>
+
 <script type="text/javascript">
   				alert("An email has been sent to you at the address provided. Please follow the link in the email to complete registration.");
   				document.location.href = 'index.php';

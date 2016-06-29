@@ -1,32 +1,231 @@
-<!doctype html>
-<html>
 
 <!-- Home page of the tutor. Displays Confirmed and Pending appointments -->
 
-<head>
-<meta charset="utf-8">
-<title>Tutor Me!!</title>
-<link rel="stylesheet" href="js/slick/slick.grid.css" type="text/css" />
-<link rel="stylesheet" href="js/slick/controls/slick.pager.css"
-	type="text/css" />
-<link rel="stylesheet"
-	href="js/slick/css/smoothness/jquery-ui-1.8.16.custom.css"
-	type="text/css" />
-<link rel="stylesheet" href="js/slick/examples/examples.css"
-	type="text/css" />
-<link rel="stylesheet" href="js/slick/controls/slick.columnpicker.css"
-	type="text/css" />
-<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
-<!--<link href='http://fonts.googleapis.com/css?family=Raleway:400,900,800,700,600,500,300,200,100' rel='stylesheet' type='text/css'>-->
+<!DOCTYPE html>
+<html lang="en">
 
-<script src="js/jquery-1.8.0.min.js" type="text/javascript"></script>
-<link rel="stylesheet" href="css/jquery-ui.css" />
-<script src="js/jquery-1.9.1.js"></script>
-<script src="js/jquery-ui.js"></script>
-<link rel="stylesheet" href="/resources/demos/style.css" />
-<script src="js/jquery.carouFredSel-5.5.0-packed.js"
-	type="text/javascript"></script>
-<script src="js/functions.js" type="text/javascript"></script>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>GradeBoost</title>
+
+    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/freelancer.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#page-top">GradeBoost</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                   <li class="page-scroll">
+                        <a href="studentHome.php">Home</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="aboutUs.php">About</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#contact">Contact</a>
+                    </li>
+                     <li class="page-scroll">
+                        <a href="searchTutors.php">Get Tutored</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="profile.php">Profile</a>
+                    </li>
+                     <li class="page-scroll">
+                        <a href="aboutUs.php">About</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="logoff.php">Log off</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                   
+                    <div class="intro-text">
+                        <span class="name">Home</span>
+                        <hr class="star-light">
+                        <span class="skills">Tutoring Records</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Schedule</h2>
+                    <hr class="star-primary">
+
+                    	<div id="userProfileDiv">
+				<table width="100%">
+					<tr>
+						<td valign="top" width="50%"><div class="grid-header"
+								style="width: 640px;">
+								<label>Confirmed Appointments</label>
+							</div>
+							<div id="myGrid" style="width: 640px; height: 125px;"></div></td>
+					</tr>
+				</table>
+
+				<table width="100%">
+					<tr>
+						<td valign="top" width="50%"><div class="grid-header"
+								style="width: 640px;">
+								<label>Pending Appointments</label>
+							</div>
+							<div id="myGrid1" style="width: 640px; height: 125px;"></div></td>
+					</tr>
+				</table>
+			</div>
+			
+
+
+                </div>
+            </div>
+            
+               
+               </div>
+            </section>
+
+    <!-- About Section -->
+    
+
+    <!-- Contact Section -->
+    
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+                        <h3>Location</h3>
+                        <p>3481 Melrose Place<br>Beverly Hills, CA 90210</p>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Around the Web</h3>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>About Freelancer</h3>
+                        <p>Freelance is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; Your Website 2014
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll visible-xs visible-sm">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+    
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/freelancer.js"></script>
+
+</body>
+
+</html>
+
+
+
 <script>
   $(function() {
     $( "#datepicker" ).datepicker();
@@ -36,7 +235,7 @@
 	window.open("index.php","_self")
 	}
   </script>
-</head>
+
 <body>
 <?php
 include "dbConnect.php";
@@ -103,58 +302,14 @@ if (! isset ( $_SESSION ['username'] )) {
 }
 include "dbClose.php";
 ?>
-<div class="shell">
-		<div class="container">
-			<header id="header">
-				<img id="logo" src="css/images/logo.png" onClick="openLanding()" />
-				<label style="float: right; margin-right: 50px;">Welcome <?php echo $username ?></label>
-				<div class="cl">&nbsp;</div>
-			</header>
-			<div id="leftNavigation">
-				<ul class="nav">
-					<li><a href="#">Home</a></li>
-					<li><a href="profile.php">My Profile</a></li>
-					<li><a href="logoff.php">Log off</a></li>
-				</ul>
-			</div>
-			<div id="userProfileDiv">
-				<table width="100%">
-					<tr>
-						<td valign="top" width="50%"><div class="grid-header"
-								style="width: 640px;">
-								<label>Confirmed Appointments</label>
-							</div>
-							<div id="myGrid" style="width: 640px; height: 125px;"></div></td>
-					</tr>
-				</table>
 
-				<table width="100%">
-					<tr>
-						<td valign="top" width="50%"><div class="grid-header"
-								style="width: 640px;">
-								<label>Pending Appointments</label>
-							</div>
-							<div id="myGrid1" style="width: 640px; height: 125px;"></div></td>
-					</tr>
-				</table>
-			</div>
-			<div id="footerContainer">
-				<div id="footer">
-					<div class="footer-nav">
-						<ul>
-						</ul>
-						<div class="cl">&nbsp;</div>
-					</div>
-					<p class="copy">
-						&copy; Copyright 2013<span>|</span>Tutor Search - Designed by <a
-							href="http://www.cs.indiana.edu/~yuqwu/courses/B561-fall13/webpage/"
-							target="_blank">Advanced Database Concepts - Group_14</a>
-					</p>
-					<div class="cl">&nbsp;</div>
+				<label style="float: right; margin-right: 50px;">Welcome <?php echo $username ?></label>
+				
+			
+			
 					<!-- end of footer -->
 				</div>
-			</div>
-		</div>
+			
 	</div>
 	<script src="js/slick/lib/jquery.event.drag-2.2.js"></script>
 	<script src="js/slick/slick.core.js"></script>
@@ -218,4 +373,4 @@ function formatter(row, cell, value, columnDef, dataContext) {
   });
 </script>
 </body>
-</html>
+

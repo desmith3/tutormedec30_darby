@@ -10,8 +10,8 @@ $mail->Port = 465; // set the port to use
 $mail->SMTPAuth = true; // turn on SMTP authentication
 $mail->Username = "darbye.smith411@gmail.com"; // your SMTP username or your gmail username
                                               
-// include 'mail_password.php'; //includes my password
-$mail->Password = "dog123"; // your SMTP password or your gmail password
+ include 'mail_password.php'; //includes my password
+$mail->Password = "Squirrel12345"; // your SMTP password or your gmail password
 
 $from = "darbye.smith411@gmail.com"; // Reply to this email
 $mail->From = $from;
@@ -28,5 +28,5 @@ $rejLink .= $scheduleID;
 
 $locationBody = "The location is <strong>" . $building . "</strong>, <strong>" . $floor . "</strong> floor, room <strong>" . $room . "</strong>.<br />";
 $timeBody = "Time is on <strong>" . $date . "</strong>, from <strong>" . $beginTime . "</strong> to <strong>" . $endTime . "</strong>.<br />";
-$endBody = "<br />Thank you <br /> Tutor me!<br />";
+$endBody = "<br />Thank you <br /> GradeBoost<br />";
 ?>

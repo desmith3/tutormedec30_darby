@@ -1,141 +1,183 @@
-<!doctype html>
-<html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<meta charset="utf-8">
-<title>Tutor Me!!</title>
-<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
-<!--<link href='http://fonts.googleapis.com/css?family=Raleway:400,900,800,700,600,500,300,200,100' rel='stylesheet' type='text/css'> -->
-<script src="js/jquery-1.8.0.min.js" type="text/javascript"></script>
-<link rel="stylesheet" href="css/jquery-ui.css" />
-<script src="js/jquery-1.9.1.js"></script>
-<script src="js/jquery-ui.js"></script>
-<link rel="stylesheet" href="/resources/demos/style.css" />
-<!--[if lt IE 9]>
-		<script src="js/modernizr.custom.js"></script>
-	<![endif]-->
-<script src="js/jquery.carouFredSel-5.5.0-packed.js"
-	type="text/javascript"></script>
-<script src="js/functions.js" type="text/javascript"></script>
-<script>
-  $(function() {
-    $( "#datepicker" ).datepicker({
-    minDate: 0,
-	maxDate: '+2w',
-    dateFormat: 'yy-mm-dd'
-});
-  });
-  function openHome()
-	{
-	window.open("tutorHome.html","_self")
-	}
-  </script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title> GradeBoost</title>
+
+    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/freelancer.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
-<body>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img class="img-responsive" src="img/officialGBlogo.png" alt="">
+                    <div class="intro-text">
+                        
+                        <hr class="star-light">
+                        
+                            <span></span>
+                   
+                        
+                        <!--form 2-->
+				<form id="loginForm" action="dbLoginTest.php" method="post" >
+					<div class="form-group col-xs-12 floating-label-form-group controls">	
+                    <label for="username">Username</label>
+                         <input id="username"name="username" type="name">
+                        <label for="password">Password</label>
+						<input id="password" name="password" type="password">
+
+					</div> 
+                    <input type="submit" value="Login" class="btn btn-lg btn-outline" >
+					</form>
+                        
+                        
+                
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Portfolio Grid Section -->
+   
+
+    <!-- About Section -->
+   
+
+    <!-- Contact Section -->
+    
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+                        <h3>Location</h3>
+                        <p>1426 GB Headquarters<br>Tuscaloosa, AL 35401</p>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Around the Web</h3>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="https://www.facebook.com/mygradeboost/?fref=ts" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>About GradeBoost</h3>
+                        <p>GradeBoost is an easy to use, mobile application that allows a platform for peer to peer tutoring <a href="http://mygradeboost.com">go learn more</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; Your Website 2014
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll visible-xs visible-sm">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+    <!-- Portfolio Modals -->
+   
+           
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/freelancer.js"></script>
+
+</body>
+
+</html>
+
+
+<?php
+
+?>
+
+
+
+
+
 <?php
 include "dbConnect.php";
 $result1 = mysqli_query ( $con, "select CourseID from Course" );
 ?>
 
-  <div class="shell">
-		<div class="container">
-			<header id="header">
-				<img id="logo" src="css/images/logo.png" />
-			</header>
-			<div id="sliderLoginContainer">
-				<div class="slider">
-					<ul>
-						<li id="img1">
-							<div class="slide-cnt">
-								<h2>Rate your tutor</h2>
-								<p>Our rating system helps bifurcate the heroes from the zeroes.
-									So not just anybody can be a star tutor. The experience not
-									only helps students but also hone the skills of the tutors
-									thereby giving them encouragement for taking teaching as a
-									future profession.</p>
-							</div> <img src="css/images/thumb.jpg" alt="" />
-						</li>
-						<li id="img2">
-							<div class="slide-cnt">
-								<h2>Hassle Free Learning</h2>
-								<p>We make sure that two sessions never interfere with each
-									other so that students can get a hassle-free environment. The
-									users can modify their time-table according to other
-									commitments like assignments. The malleability of the system
-									helps making it a hit with the target users.</p>
-							</div> <img src="css/images/thumb2.png" alt="" />
-						</li>
-						<li id="img3">
-							<div class="slide-cnt">
-								<h2>Students for Students</h2>
-								<p>Tutors sign up for free and set their own hourly rates, the
-									students search tutors schedule them and pay them using TutorMe
-									with no added fees or surcharges. The system is created to
-									promote student success.</p>
-							</div> <img src="css/images/thumb3.png" alt="" />
-						</li>
-					</ul>
-				</div>
-				<div id="loginContainer">
-					<form id="loginForm" action="dbLoginTest.php" method="post">
-						<label for="username">Username:</label> <input id="username"
-							name="username" type="name"> <label for="password">Password:</label>
-						<input id="password" name="password" type="password"> <input
-							type="submit" value="Login" style="margin-top: 10px;">
-					</form>
-					 <a href="register.php"
-						style="float: right; margin-right: 30px; margin-top: 0px;">Register
-						Now!!</a>
-				</div>
-			</div>
-			<!-- search -->
-			<div id="searchContainer">
-				<div class="search">
-					<form id="searchForm" action="showResult.php" method="post">
-						<h4>Tutor Search</h4>
-					 <label for="course">Course:</label> <select id="course"
-							name="course" ></select><!--id="course"took this out might need to go back in-->
-                        <select>
-				<?php
-				while ( $row = mysqli_fetch_array ( $result1 ) )
-					echo ("<option value = '" . $row ['CourseID'] . "'>" . $row ['CourseID'] . "</option>");
-				?></select> <label for="datepicker">Date:</label> <
-							id="datepicker" name="datepicker" type="name" class="field"
-							value="Enter Date here" title="Enter Date here"> /> <input
-							type="submit" name="searchBox" value="Search">
-						<div class="cl">&nbsp;</div>
-					</form>
-				</div>
-				<!-- end of search -->
-			</div>
-			<div id="aboutUs">
 
-				<h4>About Us</h4>
-				<p>
-					Tutor me is a place where students come together to organize peer
-					tutoring. It gives a new facet to learning as it gives a very
-					different ambience as compared to the classroom environment. The
-					application offers majority of the courses offered by School of
-					Informatics and Computing. We yearn to grow with each passing year.<br />
-				</p>
-			</div>
-			<!-- footer -->
-			<div id="footerContainer">
-				<div id="footer">
-					<div class="footer-nav">
-						<ul>
-						</ul>
-						<div class="cl">&nbsp;</div>
-					</div>
-					<p class="copy">
-						&copy; Copyright 2013<span>|</span>Tutor Search - Designed by <a
-							href="http://www.cs.indiana.edu/~yuqwu/courses/B561-fall13/webpage/"
-							target="_blank">Advanced Database Concepts - Group_14</a>
-					</p>
-					<div class="cl">&nbsp;</div>
-					<!-- end of footer -->
-				</div>
-			</div>
-		</div>
-	</div>
-</body>
-</html>
+      <!-- Navigation -->
+   
+                   
+                  
+ 
