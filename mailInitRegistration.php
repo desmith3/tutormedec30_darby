@@ -1,7 +1,7 @@
 
 <?php
-//require './PHPMailer-master/class.phpmailer.php';
-//require './PHPMailer-master/class.smtp.php';
+require './PHPMailer-master/class.phpmailer.php';
+require './PHPMailer-master/class.smtp.php';
 
 <<<<<<< HEAD
 $mail = new PHPMailer ();
