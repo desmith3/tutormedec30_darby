@@ -56,7 +56,7 @@ if (isset ( $_POST ) && ! empty ( $_POST )) {
 			
 			$to = $email;
 			$name = $username; // Recipient's name
-			$actLink = 'http://www.cs.indiana.edu/cgi-pub/sauchakr/tutor/registrationConfirmation.php?userid=' . $username;
+			$actLink = 'http://gradeboost.azurewebsites.net/registrationConfirmation.php?userid=' . $username;
 			
             $from = "desmith3@crimson.ua.edu"; // Reply to this email
             $mail->From = $from;
@@ -83,11 +83,11 @@ if (isset ( $_POST ) && ! empty ( $_POST )) {
 			//$body .= "<br />Thank you <br /> Tutor me!<br />";
 >>>>>>> e5f7ee562108cb709ff1181fd52fcae7dcedae51
 			
-			//$mail->Body = $body; // HTML Body
-			//$mail->AltBody = $body; // Text Body
-			//if (! $mail->Send ()) {
-			//	echo "Mailer Error: " . $mail->ErrorInfo;
-			//} else {
+			$mail->Body = $body; // HTML Body
+			$mail->AltBody = $body; // Text Body
+			if (! $mail->Send ()) {
+				echo "Mailer Error: " . $mail->ErrorInfo;
+			} else {
 				?>
 
 <script type="text/javascript">
